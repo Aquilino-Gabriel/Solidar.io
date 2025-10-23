@@ -8,18 +8,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Solidar.io 🤝</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html" class="active">Cadastro</a></li>
-        </ul>
-      </nav>
+ <header class="header">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Solidar.io — Início">Solidar.io</a>
+
+    <ul class="nav" data-nav>
+      <li><a href="index.html">Início</a></li>
+      <li data-has-dropdown>
+        <a href="#" aria-haspopup="true" aria-expanded="false">Projetos</a>
+        <div class="dropdown" role="menu" aria-label="submenu projetos">
+          <a href="projetos.html#educacao">Educação</a>
+          <a href="projetos.html#alimentacao">Alimentação</a>
+          <a href="projetos.html#meioambiente">Meio Ambiente</a>
+        </div>
+      </li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+
+    <div class="actions">
+      <a class="btn ghost" href="#transparencia">Transparência</a>
+      <a class="btn secondary" href="#doar">Doe agora</a>
     </div>
-  </header>
+
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" data-burger>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
 
   <section class="cadastro">
     <h2>Cadastre-se e Faça Parte!</h2>
