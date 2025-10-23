@@ -1,0 +1,53 @@
+:root {
+--color-neutral-800: #424242;
+--color-neutral-900: #212121;
+
+
+/* === Tipografia (mín. 5 tamanhos) === */
+--font-sans: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+--fs-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.875rem);
+--fs-sm: clamp(0.875rem, 0.84rem + 0.2vw, 1rem);
+--fs-md: clamp(1rem, 0.96rem + 0.25vw, 1.125rem);
+--fs-lg: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem);
+--fs-xl: clamp(1.75rem, 1.4rem + 1.6vw, 2.25rem);
+
+
+/* === Espaçamento modular (8/16/24/32/48/64) === */
+--space-8: 0.5rem;
+--space-16: 1rem;
+--space-24: 1.5rem;
+--space-32: 2rem;
+--space-48: 3rem;
+--space-64: 4rem;
+
+
+/* Bordas, sombra, raio, container, etc. */
+--radius-sm: 8px;
+--radius-md: 12px;
+--radius-lg: 20px;
+--shadow-sm: 0 2px 6px rgba(0,0,0,.08);
+--shadow-md: 0 6px 18px rgba(0,0,0,.12);
+--shadow-lg: 0 10px 28px rgba(0,0,0,.18);
+--container-w: 1200px;
+
+
+/* Z-index scale */
+--z-nav: 1000;
+--z-dropdown: 1100;
+--z-modal: 1200;
+--z-toast: 1300;
+
+
+/* Transições */
+--easing: cubic-bezier(.2,.8,.2,1);
+--dur-fast: 120ms;
+--dur-med: 240ms;
+--dur-slow: 420ms;
+
+
+/* === Breakpoints (mín. 5) === */
+--bp-xs: 360px;
+--bp-sm: 480px;
+--bp-md: 768px;
+--bp-lg: 1024px;
+--bp-xl: 1280px;
