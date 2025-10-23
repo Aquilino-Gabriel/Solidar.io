@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projetos — ONG Exemplo</title>
+  <meta name="description" content="Conheça nossos projetos sociais, como se voluntariar e como doar.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header>
+    <div class="container">
+      <a href="index.html" aria-label="Voltar para início">← Início</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <h1>Projetos</h1>
+
+    <section aria-labelledby="o-que-fazemos">
+      <h2 id="o-que-fazemos">O que fazemos</h2>
+      <p>Descrição geral dos programas e áreas de atuação.</p>
+    </section>
+
+    <section aria-labelledby="lista-projetos">
+      <h2 id="lista-projetos">Lista de projetos</h2>
+
+      <article aria-labelledby="proj1" class="project">
+        <h3 id="proj1">Projeto Alfabetiza+</h3>
+        <p>Objetivo: alfabetização de jovens e adultos.</p>
+        <p><strong>Impacto:</strong> 300 pessoas atendidas.</p>
+        <figure>
+          <img src="assets/img/projetos/alfabetiza.webp" alt="Voluntários em sala de aula" loading="lazy">
+          <figcaption>Voluntários em ação — Projeto Alfabetiza+</figcaption>
+        </figure>
+      </article>
+
+      <article aria-labelledby="proj2" class="project">
+        <h3 id="proj2">Projeto Verdecer</h3>
+        <p>Objetivo: reflorestamento e educação ambiental.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="como-ajudar">
+      <h2 id="como-ajudar">Como ajudar</h2>
+      <p>Doe, seja voluntário ou compartilhe nosso trabalho nas redes sociais.</p>
+      <p><a href="cadastro.html">Cadastre-se como voluntário</a> ou <a href="#">faça uma doação</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="ano2"></span> ONG Exemplo</p>
+    </div>
+    <script>document.getElementById('ano2').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
