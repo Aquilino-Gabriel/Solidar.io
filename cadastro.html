@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro | Solidar.io</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Solidar.io 🤝</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" class="active">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cadastro">
+    <h2>Cadastre-se e Faça Parte!</h2>
+    <form>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label>Nome Completo:</label>
+        <input type="text" name="nome" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>CPF:</label>
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+
+        <label>Data de Nascimento:</label>
+        <input type="date" name="nascimento" required>
+
+        <label>Endereço:</label>
+        <input type="text" name="endereco" required>
+
+        <label>CEP:</label>
+        <input type="text" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+
+        <label>Cidade:</label>
+        <input type="text" name="cidade" required>
+
+        <label>Estado:</label>
+        <input type="text" name="estado" maxlength="2" required>
+      </fieldset>
+
+      <button type="submit" class="btn">Enviar Cadastro</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Solidar.io - Juntos, fazemos mais!</p>
+  </footer>
+</body>
+</html>
