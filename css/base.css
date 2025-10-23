@@ -1,0 +1,23 @@
+/* Reset + base acessível */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-sans); color: var(--color-neutral-900); background: var(--color-neutral-50); line-height: 1.6; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--color-accent-1); outline-offset: 2px; 
+/* Tipografia básica */
+h1 { font-size: var(--fs-xl); font-weight: 700; }
+h2 { font-size: var(--fs-lg); font-weight: 700; }
+h3 { font-size: var(--fs-md); font-weight: 700; }
+small { font-size: var(--fs-xs); color: var(--color-neutral-600); }
+
+
+/* Containers */
+.container { width: min(100% - 2rem, var(--container-w)); margin-inline: auto; }
+.section { padding-block: var(--space-48); }
+
+/* Helpers */
+.hidden { display: none !important; }
+.skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.skip-link:focus { position: fixed; left: 1rem; top: 1rem; z-index: var(--z-nav); background: var(--color-neutral-0); padding: .5rem 1rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); }
